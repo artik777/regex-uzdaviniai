@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>RegEx Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Create a new account</h1>
+      <form>
+        <div class="input-group">
+          <label for="username" class="label">Username</label>
+          <input id="username" placeholder="username" name="username" type="text" />
+          <span>Username must be and contain 5 - 12 characters</span>
+        </div>
+
+        <div class="input-group">
+          <label for="email" class="label">Email</label>
+          <input id="email" type="email" name="email" placeholder="test@test.com" />
+          <span>Wrong email, e.g. me@mydomain.com</span>
+        </div>
+
+        <div class="input-group">
+          <label for="password" class="label">Password</label>
+          <input id="password" type="password" name="password" autocomplete="false" />
+          <span>Password must alphanumeric and be 8 - 20 characters</span>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
